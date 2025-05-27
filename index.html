@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roldan Games</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./utils/game_icon.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans p-8">
+    <div
+      class="bg-green-400 text-black font-semibold py-2 overflow-hidden relative"
+    >
+      <div class="animate-marquee whitespace-nowrap">
+        🎉 ¡Aprovecha nuestras ofertas limitadas! Juegos en promoción por tiempo
+        limitado 🔥 | 🚀 Shooters desde $30 | 🏁 Juegos de carreras 20% OFF | 👶
+        Juegos infantiles con descuento 🎮
+      </div>
+    </div>
+    <nav
+      class="bg-gray-950 text-white px-6 py-4 flex items-center justify-between shadow-lg"
+    >
+      <div class="text-green-400 font-bold text-xl">🎮 Roldan Games</div>
+
+      <ul class="flex space-x-6 text-sm items-center">
+        <li>
+          <a
+            href="#"
+            class="categoria-link text-gray-300 hover:text-green-400 transition"
+            data-categoria="Todos"
+          >
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="categoria-link text-gray-300 hover:text-green-400 transition"
+            data-categoria="Infantil"
+          >
+            Niños
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="categoria-link text-gray-300 hover:text-green-400 transition"
+            data-categoria="Carreras"
+          >
+            Carreras
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="categoria-link text-gray-300 hover:text-green-400 transition"
+            data-categoria="Shooter"
+          >
+            Shooter
+          </a>
+        </li>
+        <li class="relative">
+          <a
+            href="#"
+            id="cart-button"
+            class="text-gray-300 hover:text-green-400 flex items-center transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width=""
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m13-9l2 9m-5-4h-4"
+              />
+            </svg>
+            <span
+              id="cart-count"
+              class="absolute -top-2 -right-2 bg-green-400 text-black text-xs font-bold px-1.5 py-0.5 rounded-full"
+              >1</span
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            href="./subpaginas/formulario.html"
+            class="text-gray-300 hover:text-green-400 transition"
+          >
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div
+      class="text-center my-12 max-w-4xl mx-auto p-8 rounded-lg"
+      style="
+        background: linear-gradient(
+          135deg,
+          rgba(16, 185, 129, 0.8),
+          rgba(30, 58, 138, 0.8)
+        );
+      "
+    >
+      <h2 class="text-green-400 text-4xl font-bold mb-4">
+        Bienvenido a Roldan Games
+      </h2>
+      <p class="text-gray-100 text-lg">
+        Tu tienda online favorita con los mejores juegos para todas las edades y
+        gustos.<br />
+        Explora nuestras categorías y encuentra tu próximo juego favorito.
+      </p>
+    </div>
+    <div
+      id="caja_galeria"
+      class="flex flex-wrap justify-center gap-10 bg-gray-800 p-6 rounded-xl border-2 border-green-400 shadow-lg m-8"
+    ></div>
+    <footer
+      class="bg-gray-900 border-t border-gray-700 text-gray-400 p-8 mt-12 font-sans"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8"
+      >
+        <div class="text-center md:text-left">
+          <p
+            class="text-green-300 font-semibold mb-2 tracking-wide"
+            style="
+              text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            "
+          >
+            © 2025 Roldan Games. Todos los derechos reservados.
+          </p>
+          <p
+            class="text-gray-400 italic text-sm"
+            style="font-family: 'Georgia', serif"
+          >
+            Diseñado por David Silva y Ronald Possu
+          </p>
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+          <p
+            class="font-semibold text-green-300 mb-4 tracking-wide"
+            style="
+              text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            "
+          >
+            Métodos de pago aceptados:
+          </p>
+          <div
+            class="flex flex-wrap gap-6 text-green-200 text-lg font-medium"
+            style="font-family: 'Verdana', Geneva, Tahoma, sans-serif"
+          >
+            <div class="flex items-center space-x-2">
+              <span>💳</span><span>Tarjeta de crédito</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span>🏧</span><span>Tarjeta de débito</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span>📱</span><span>Nequi</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span>💰</span><span>Daviplata</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span>💵</span><span>Efectivo</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span>🏦</span><span>PSE</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center md:items-end text-green-300 tracking-wide"
+          style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+        >
+          <p class="font-semibold mb-4">Certificaciones y seguridad:</p>
+          <ul class="space-y-1 text-sm font-medium">
+            <li>Certificado SSL</li>
+            <li>Compra segura</li>
+            <li>Protección al consumidor</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
